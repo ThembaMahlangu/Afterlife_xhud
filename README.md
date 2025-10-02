@@ -23,10 +23,8 @@ My modifications introduce:
 
 ## 📸 Screenshots / Demo
 
-(Add your own images here.)
-
 Example:  
-> ![HUD Screenshot](path/to/screenshot.png)  
+> ![HUD Screenshot]([path/to/screenshot.png](https://themba.tech/wp-content/uploads/2025/10/Screenshot-2025-10-02-030853.png))  
 > *Colored HUD with player info & notification support.*
 
 ---
