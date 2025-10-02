@@ -60,15 +60,6 @@ For further visual tweaks, edit the CSS in the `ui/` or `html/` folder.
 
 ---
 
-## 🎨 Customization / Theming
-
-- Change HUD colors with HEX/RGB values  
-- Add / remove panels (e.g. hunger & thirst if not used on your server)  
-- Replace icons or fonts for your own style  
-- Adjust notification messages for your community’s tone  
-
----
-
 ## 🙌 Credits
 
 - **Original resource**: [AfterLifeStudio / Afterlife-Resources](https://github.com/AfterLifeStudio/Afterlife-Resources)  
