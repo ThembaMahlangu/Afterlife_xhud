@@ -33,14 +33,14 @@ Example:
 
 1. Clone or download this repository:  
    ```bash
-   git clone https://github.com/YourUsername/Afterlife_xhud-modified.git
+   git clone https://github.com/YourUsername/Afterlife_xhud.git
    ```
 
-2. Copy the `afterlife_xhud` resource folder into your server’s `resources` directory.
+2. Copy the `Afterlife_xhud` resource folder into your server’s `resources` directory.
 
 3. Ensure the resource starts in `server.cfg`:  
    ```cfg
-   ensure afterlife_xhud
+   ensure Afterlife_xhud
    ```
 
 4. Restart or reload your server.  
