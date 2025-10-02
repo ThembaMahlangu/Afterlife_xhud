@@ -45,18 +45,7 @@ Example:
 
 4. Restart or reload your server.  
 
----
-
-## 🔧 Configuration
-
-Inside the resource config, you can set:
-
-- `themeColor` — base HUD color  
-- Enable / disable **player info elements** (hunger, thirst, stress, armor, etc.)  
-- **Notification thresholds** (e.g. warn if hunger < 20%)  
-- HUD position offsets  
-
-For further visual tweaks, edit the CSS in the `ui/` or `html/` folder.
+For further visual tweaks, edit the CSS in the `ui/` folder.
 
 ---
 
