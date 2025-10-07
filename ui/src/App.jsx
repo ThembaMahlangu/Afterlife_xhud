@@ -1,5 +1,7 @@
 import './App.css'
 import Hud from './components/Hud'
+import NotificationExport from './components/NotificationExport'
+import ProgressBarExport from './components/ProgressBarExport'
 import { useState } from 'react';
 import Fade from './utils/fade';
 import { NuiEvent } from './hooks/NuiEvent';
@@ -18,6 +20,8 @@ function App() {
     <Fade in={visible}>
       <Hud />
     </Fade>
+    <NotificationExport />
+    <ProgressBarExport />
     </>
   )
 }

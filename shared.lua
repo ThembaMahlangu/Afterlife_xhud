@@ -53,7 +53,7 @@ Config.mileage = false
 ------- Settings Configuration
 Config.settingscommand = 'hud' 
 
-Config.notify = 'qb-core' -- ox_lib, xhud, or qb-core
+Config.notify = 'standalone' -- standalone, ox_lib, xhud, or qb-core
 --------DONT CHANGE ANYTHING IF YOU DONT KNOW WHAT YOU ARE DOING
 Config.settings = {
     {

@@ -34,6 +34,9 @@ local speedometer = function()
             VehicleState.vehgear = GetVehicleCurrentGear(vehicle)
             VehicleState.damage = GetVehicleDamage(vehicle)
 
+            -- Keep radio disabled while in vehicle
+            SetVehicleRadioEnabled(vehicle, false)
+
             -- Fuel warning system
             local fuelLevel = VehicleState.vehfuel
             if fuelLevel <= 50 and not fuelWarned50 then

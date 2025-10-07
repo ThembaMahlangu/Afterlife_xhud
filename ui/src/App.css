@@ -389,14 +389,14 @@ body {
 }
 
 .speedometer-inner .velocity{
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 3vw;
   line-height: 3vw;
   width: 6vw;
 }
 
 .speedometer-inner .gear{
-  color: white;
+  color: rgb(255, 255, 255);
   width: 1.6vw;
   height: 1.6vw;
   border-radius: 100%;
@@ -427,7 +427,7 @@ body {
 
 .speed-icons svg{
   height: .7vw;
-  fill: white;
+  fill: rgb(255, 255, 255);
   margin: 0vw 2.2vw;
 }
 
@@ -450,7 +450,7 @@ body {
 .rpm-numbers .number{
   position: absolute;
   font-size: 0.7vw;
-  color: rgba(255, 255, 255, 0.503);
+  color: rgb(255, 44, 44);
   margin-left: -0.2vw;
   margin-top: -0.3vw;
   font-family: Kdam Thmor Pro;
@@ -770,4 +770,322 @@ svg circle.outline {
   100%{
     display: none;
   }
+<<<<<<< HEAD
+=======
+}
+
+/* Notification Export Styles */
+.notification-export-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 1.5vw;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  font-family: Kdam Thmor Pro;
+  z-index: 1000;
+}
+
+.notification-export-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.notification-export-card {
+  min-height: 2.5vw;
+  width: 18vw;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+  border-left: 4px solid #2196F3;
+  display: flex;
+  align-items: center;
+  padding: 0.4vw;
+  border-radius: 0.3vw;
+  animation: slideInLeft 0.4s ease-out;
+}
+
+.notification-export-icon {
+  margin-right: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2vw;
+  height: 2vw;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.notification-export-icon span {
+  color: white;
+  font-size: 1vw;
+}
+
+.notification-export-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+}
+
+.notification-export-title {
+  color: white;
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+
+.notification-export-description {
+  color: #ACACAC;
+  font-size: 0.7vw;
+  line-height: 1.2;
+}
+
+
+/* Progress Bar Export Styles */
+.progressbar-export-wrapper {
+  position: absolute;
+  bottom: 2.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  z-index: 9999;
+  max-width: 20vw;
+  width: 100%;
+}
+
+.progressbar-export-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.progressbar-export-card {
+  min-height: 2vw;
+  width: 100%;
+  border-left: 3px solid #2196F3;
+  display: flex;
+  align-items: center;
+  padding: 0.4vw 0.8vw;
+  border-radius: 0.8vw;
+  background-color: rgba(33, 34, 34, 0.507);
+  animation: progressSlideIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+}
+
+.progressbar-export-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
+  transform: translateX(-100%);
+  animation: shimmer 2s infinite;
+  pointer-events: none;
+}
+
+.progressbar-export-icon {
+  margin-right: 0.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2vw;
+  height: 2vw;
+  background: linear-gradient(135deg, rgba(33, 150, 243, 0.2) 0%, rgba(33, 150, 243, 0.1) 100%);
+  border: 1px solid rgba(33, 150, 243, 0.3);
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.progressbar-export-icon span {
+  color: #2196F3;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.progressbar-export-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vw;
+  position: relative;
+  z-index: 1;
+}
+
+.progressbar-export-title {
+  color: #ffffff;
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.15vw;
+}
+
+.progressbar-export-description {
+  color: #b0b0b0;
+  font-size: 0.65vw;
+  line-height: 1.3;
+  margin-bottom: 0.25vw;
+}
+
+.progressbar-export-bar {
+  width: 100%;
+  height: 0.3vw;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.15vw;
+  overflow: hidden;
+  margin: 0.25vw 0;
+  position: relative;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.progressbar-export-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2196F3 0%, #21CBF3 50%, #2196F3 100%);
+  border-radius: 0.15vw;
+  transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  box-shadow: 0 0 6px rgba(33, 150, 243, 0.4);
+}
+
+.progressbar-export-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+  animation: progressShine 1.5s infinite;
+}
+
+.progressbar-export-label {
+  color: #ffffff;
+  font-size: 0.6vw;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 0.15vw;
+}
+
+.progressbar-export-tip {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.5vw;
+  text-align: right;
+  margin-top: 0.2vw;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Progress bar animations */
+@keyframes progressSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes progressShine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Progress bar type variations */
+.progressbar-export-card[data-type="error"] {
+  border-left-color: #ff4444;
+}
+
+.progressbar-export-card[data-type="error"] .progressbar-export-icon {
+  background: linear-gradient(135deg, rgba(255, 68, 68, 0.2) 0%, rgba(255, 68, 68, 0.1) 100%);
+  border-color: rgba(255, 68, 68, 0.3);
+}
+
+.progressbar-export-card[data-type="error"] .progressbar-export-icon span {
+  color: #ff4444;
+}
+
+.progressbar-export-card[data-type="error"] .progressbar-export-fill {
+  background: linear-gradient(90deg, #ff4444 0%, #ff6666 50%, #ff4444 100%);
+  box-shadow: 0 0 8px rgba(255, 68, 68, 0.4);
+}
+
+.progressbar-export-card[data-type="warning"] {
+  border-left-color: #FF9800;
+}
+
+.progressbar-export-card[data-type="warning"] .progressbar-export-icon {
+  background: linear-gradient(135deg, rgba(255, 152, 0, 0.2) 0%, rgba(255, 152, 0, 0.1) 100%);
+  border-color: rgba(255, 152, 0, 0.3);
+}
+
+.progressbar-export-card[data-type="warning"] .progressbar-export-icon span {
+  color: #FF9800;
+}
+
+.progressbar-export-card[data-type="warning"] .progressbar-export-fill {
+  background: linear-gradient(90deg, #FF9800 0%, #FFB74D 50%, #FF9800 100%);
+  box-shadow: 0 0 8px rgba(255, 152, 0, 0.4);
+}
+
+.progressbar-export-card[data-type="success"] {
+  border-left-color: #4CAF50;
+}
+
+.progressbar-export-card[data-type="success"] .progressbar-export-icon {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.2) 0%, rgba(76, 175, 80, 0.1) 100%);
+  border-color: rgba(76, 175, 80, 0.3);
+}
+
+.progressbar-export-card[data-type="success"] .progressbar-export-icon span {
+  color: #4CAF50;
+}
+
+.progressbar-export-card[data-type="success"] .progressbar-export-fill {
+  background: linear-gradient(90deg, #4CAF50 0%, #66BB6A 50%, #4CAF50 100%);
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+>>>>>>> ffa2828 (Adding notifications and Progressbar exports)
 }

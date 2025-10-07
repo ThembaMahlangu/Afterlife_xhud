@@ -100,3 +100,38 @@ end)
 AddEventHandler('pma-voice:setTalkingMode', function(mode)
     Voicemode = mode
 end)
+
+-- QBCore Compatible Notification Export
+exports('Notify', function(text, texttype, length, icon)
+    local typeMap = {
+        success = 'success',
+        error = 'error',
+        primary = 'info',
+        police = 'info',
+        ambulance = 'info',
+        info = 'info',
+        warning = 'warning'
+    }
+    
+    NuiMessage('notificationExport', {
+        type = typeMap[texttype or 'info'] or 'info',
+        title = texttype or 'Info',
+        description = text,
+        duration = length or 5000,
+        dismissible = true,
+        icon = icon or (texttype == 'error' and 'error' or texttype == 'warning' and 'warning' or texttype == 'success' and 'check_circle' or 'info')
+    })
+end)
+
+-- Additional exports for compatibility
+exports('ShowNotification', function(data)
+    NuiMessage('notificationExport', data)
+end)
+
+exports('HideNotification', function(id)
+    NuiMessage('notificationHide', {id = id})
+end)
+
+exports('ShowProgressBar', function(data)
+    NuiMessage('progressBarExport', data)
+end)

@@ -9,6 +9,7 @@ client_scripts {
     'modules/*.lua',
     'editable.lua',
     'client.lua',
+    'progressbar.lua',
 }
 
 server_scripts {

@@ -20,6 +20,16 @@ Notify = function (title,description,type)
         end
         
         TriggerEvent('QBCore:Notify', description, qbType, 5000)
+    elseif Config.notify == 'standalone' then
+        -- Use the built-in notification system
+        exports['Afterlife_xhud']:ShowNotification({
+            type = type,
+            title = title,
+            description = description,
+            duration = 5000,
+            dismissible = true,
+            icon = type == 'error' and 'error' or type == 'warning' and 'warning' or type == 'success' and 'check_circle' or 'info'
+        })
     else
         XNotify({
             title = title,

@@ -77,7 +77,7 @@ const Speedometer = () => {
                 cx="50%"
                 cy="50%"
                 r="6vw"
-                stroke="white"
+                stroke="rgb(0, 140, 255)"
                 stroke-width=".5vw"
                 fill="transparent"
               />
@@ -113,7 +113,7 @@ const Speedometer = () => {
                 cx="50%"
                 cy="50%"
                 r="6vw"
-                stroke="white"
+                stroke="rgb(250, 177, 20)"
                 stroke-width=".4vw"
                 fill="transparent"
               />
@@ -126,7 +126,7 @@ const Speedometer = () => {
                 cx="50%"
                 cy="50%"
                 r="6vw"
-                stroke="white"
+                stroke="rgb(104, 250, 20)"
                 stroke-width=".4vw"
                 fill="transparent"
               />
